@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or reference this skill, please cite it as below."
+title: "Vibecode Pro Max for Education: a Claude Code skill for building education and training apps"
+authors:
+  - name: "Chuong Life"
+version: 1.0.0
+date-released: 2026-11-13
+license: MIT
+repository-code: "https://github.com/chuonglife/vibecode-pro-max-edu"
+keywords:
+  - vibe coding
+  - Claude Code
+  - Agent Skills
+  - edtech
+  - education
+  - LMS
+  - accessibility
+  - student data privacy
