@@ -1,19 +1,19 @@
-# Vibecode Pro Max for Education
+# EdTech Vibe Coding
 
 > Free, MIT-licensed Claude Code Agent Skill that guides educators and edtech builders through creating a new education or training app with AI, using a 4-stage spec-first vibe coding workflow: Idea → Spec & UI Design → Build → Launch. It produces a PRD and TDD in the repository, a clickable React prototype, a per-feature build loop with acceptance checks and security review, and a hardened VPS deployment with tested backups, plus checks for student data privacy (FERPA, COPPA, GDPR), accessibility (WCAG 2.2 AA), role-based access and assessment integrity.
 
 Author: Chuong Life (https://github.com/chuonglife). Adapted from the Vibe Code Roadmap v2 by class.mecode.pro.
 
 ## Install
-- Claude Code: `/plugin marketplace add chuonglife/vibecode-pro-max-edu` then `/plugin install vibecode-pro-max-edu@vibecode-pro-max-edu`
-- Manual: copy `skills/vibecode-pro-max-edu` to `~/.claude/skills/`
+- Claude Code: `/plugin marketplace add chuonglife/edtech-vibe-coding` then `/plugin install edtech-vibe-coding@edtech-vibe-coding`
+- Manual: copy `skills/edtech-vibe-coding` to `~/.claude/skills/`
 - Claude.ai: upload the release zip in Settings → Capabilities → Skills
 
 ## Files
-- [README](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/README.md): overview, install, FAQ
-- [SKILL.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/SKILL.md): the workflow Claude follows
-- [prompts.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/references/prompts.md): copy-ready prompts S1.1–S4.13
-- [prd-template.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/references/prd-template.md): PRD template for education apps
-- [tdd-template.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/references/tdd-template.md): TDD template
-- [edu-checklist.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/references/edu-checklist.md): privacy, accessibility, integrity, interoperability checklist
-- [example-prd-quiz-app.md](https://github.com/chuonglife/vibecode-pro-max-edu/blob/main/skills/vibecode-pro-max-edu/references/example-prd-quiz-app.md): example PRD
+- [README](https://github.com/chuonglife/edtech-vibe-coding/blob/main/README.md): overview, install, FAQ
+- [SKILL.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/SKILL.md): the workflow Claude follows
+- [prompts.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/prompts.md): copy-ready prompts S1.1–S4.13
+- [prd-template.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/prd-template.md): PRD template for education apps
+- [tdd-template.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/tdd-template.md): TDD template
+- [edu-checklist.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/edu-checklist.md): privacy, accessibility, integrity, interoperability checklist
+- [example-prd-quiz-app.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/example-prd-quiz-app.md): example PRD

@@ -1,4 +1,4 @@
-# Prompt library — Vibecode Pro Max for Education
+# Prompt library — EdTech Vibe Coding
 
 Copy-ready prompts for every step of the workflow. Replace `[brackets]`. Codes `S1.1 … S4.13` match the steps in `SKILL.md`.
 

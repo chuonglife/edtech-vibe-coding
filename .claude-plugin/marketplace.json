@@ -1,19 +1,19 @@
 {
-  "name": "vibecode-pro-max-edu",
+  "name": "edtech-vibe-coding",
   "owner": {
     "name": "Chuong Life",
     "url": "https://github.com/chuonglife"
   },
   "metadata": {
     "description": "Claude Code skill for vibe coding new education and training apps from idea to launch.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
-      "name": "vibecode-pro-max-edu",
+      "name": "edtech-vibe-coding",
       "source": "./",
       "description": "4-stage spec-first vibe coding workflow for building education and training apps with Claude Code.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "education",
       "tags": ["education", "edtech", "vibe-coding", "lms", "workflow"]
     }

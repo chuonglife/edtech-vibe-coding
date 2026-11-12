@@ -1,9 +1,9 @@
 ---
-name: vibecode-pro-max-edu
+name: edtech-vibe-coding
 description: 4-stage spec-first workflow (Idea → Spec & UI Design → Build → Launch) for building a NEW education or training app from scratch with Claude Code (LMS, course platform, quiz or assessment tool, gradebook, attendance tracker, tutoring, corporate training or student portal). Produces a PRD and TDD in the repo, a clickable React prototype before real code, a per-feature loop with acceptance checks and security review, and a hardened VPS deploy with backups, plus checks for student privacy (FERPA, COPPA, GDPR), WCAG 2.2 AA, roles and assessment integrity. Use whenever someone wants to start a brand-new app or tool for teaching, learning, schools, universities, tutors or L&D teams, even if they only say "build an app for my class", "e-learning platform idea", "quiz app for my students" or "vibecode". Not for adding features to an existing codebase.
 ---
 
-# Vibecode Pro Max for Education — from idea to a live learning app
+# EdTech Vibe Coding — from idea to a live learning app
 
 A disciplined vibe-coding workflow for people who build tools for teaching and learning: teachers, instructional designers, training managers, edtech founders, school IT staff. It turns an idea into a deployed app through four stages and eleven steps, and it keeps the decisions in files, not in chat history.
 

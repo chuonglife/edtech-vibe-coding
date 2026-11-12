@@ -1,13 +1,13 @@
 {
-  "name": "vibecode-pro-max-edu",
-  "version": "1.0.0",
+  "name": "edtech-vibe-coding",
+  "version": "1.1.0",
   "description": "4-stage spec-first vibe coding workflow (Idea → Spec & UI → Build → Launch) for building new education and training apps with Claude Code: PRD/TDD, clickable prototype, per-feature security review, VPS deploy, FERPA/COPPA/GDPR and WCAG 2.2 AA checks.",
   "author": {
     "name": "Chuong Life",
     "url": "https://github.com/chuonglife"
   },
-  "homepage": "https://github.com/chuonglife/vibecode-pro-max-edu",
-  "repository": "https://github.com/chuonglife/vibecode-pro-max-edu",
+  "homepage": "https://github.com/chuonglife/edtech-vibe-coding",
+  "repository": "https://github.com/chuonglife/edtech-vibe-coding",
   "license": "MIT",
   "keywords": ["vibe-coding", "education", "edtech", "lms", "claude-code", "agent-skills", "prd", "accessibility", "ferpa", "gdpr"]
 }

@@ -1,6 +1,8 @@
-# Vibecode Pro Max for Education — Claude Code skill for building edtech apps
+# EdTech Vibe Coding — Claude Code Skill for Building Education Apps
 
-**Vibecode Pro Max for Education** is a free, open-source [Claude Code](https://claude.com/claude-code) skill (an Agent Skill) that guides teachers, instructional designers, training managers and edtech founders through building a **new education or training app from scratch with AI** — from idea to a secure, live web app — using a 4-stage, spec-first vibe coding workflow: **Idea → Spec & UI Design → Build → Launch**.
+> Formerly published as `vibecode-pro-max-edu`; old links redirect here.
+
+**EdTech Vibe Coding** is a free, open-source [Claude Code](https://claude.com/claude-code) skill (an Agent Skill) that guides teachers, instructional designers, training managers and edtech founders through building a **new education or training app from scratch with AI** — from idea to a secure, live web app — using a 4-stage, spec-first vibe coding workflow: **Idea → Spec & UI Design → Build → Launch**.
 
 It works for any learning product: LMS, online course platform, quiz and assessment app, gradebook, class roster, attendance tracker, tutoring marketplace, corporate L&D portal, student or parent portal, school admin dashboard.
 
@@ -61,19 +63,19 @@ Each feature in the PRD is a heading with a status and a code, so the document o
 In Claude Code, run:
 
 ```text
-/plugin marketplace add chuonglife/vibecode-pro-max-edu
-/plugin install vibecode-pro-max-edu@vibecode-pro-max-edu
+/plugin marketplace add chuonglife/edtech-vibe-coding
+/plugin install edtech-vibe-coding@edtech-vibe-coding
 ```
 
 ### Option 2 — Copy the skill folder
 ```bash
-git clone https://github.com/chuonglife/vibecode-pro-max-edu.git
-cp -r vibecode-pro-max-edu/skills/vibecode-pro-max-edu ~/.claude/skills/
+git clone https://github.com/chuonglife/edtech-vibe-coding.git
+cp -r edtech-vibe-coding/skills/edtech-vibe-coding ~/.claude/skills/
 ```
 On Windows, copy the folder to `%USERPROFILE%\.claude\skills\`.
 
 ### Option 3 — Claude.ai
-Download `vibecode-pro-max-edu.zip` from the [latest release](https://github.com/chuonglife/vibecode-pro-max-edu/releases/latest) and upload it in **Settings → Capabilities → Skills**.
+Download `edtech-vibe-coding.zip` from the [latest release](https://github.com/chuonglife/edtech-vibe-coding/releases/latest) and upload it in **Settings → Capabilities → Skills**.
 
 ---
 
@@ -91,7 +93,7 @@ Claude then walks you through each stage, asks only what a non-specialist can an
 ### What's inside
 
 ```
-skills/vibecode-pro-max-edu/
+skills/edtech-vibe-coding/
 ├── SKILL.md                         # the workflow and rules Claude follows
 └── references/
     ├── prompts.md                   # 40+ copy-ready prompts, S1.1 … S4.13
