@@ -1,6 +1,6 @@
 {
   "name": "edtech-vibe-coding",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "4-stage spec-first vibe coding workflow (Idea → Spec & UI → Build → Launch) for building new education and training apps with Claude Code: PRD/TDD, clickable prototype, per-feature security review, VPS deploy, FERPA/COPPA/GDPR and WCAG 2.2 AA checks.",
   "author": {
     "name": "Chuong Life",

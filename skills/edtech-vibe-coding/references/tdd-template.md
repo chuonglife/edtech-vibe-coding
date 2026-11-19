@@ -1,4 +1,4 @@
-# TDD — [App name]
+# TDD - [App name]
 
 > Technical Design Document. Based on `docs/PRD.md` and the prototype in `ui-demo/`.
 
@@ -16,7 +16,7 @@
 - **Backend:** [e.g. Next.js route handlers / Node API]
 - **Database:** [e.g. PostgreSQL + Prisma/Drizzle migrations]
 - **Hosting:** [VPS + CloudPanel / managed platform], region [ ]
-- **Why this stack:** [2–3 lines: common, stable, easy for one person + AI]
+- **Why this stack:** [2-3 lines: common, stable, easy for one person + AI]
 
 ## 2. Architecture
 ```
@@ -47,7 +47,7 @@ User → domain → DNS → reverse proxy (Nginx) → app :[port] → PostgreSQL
 |---|---|---|---|---|
 
 ## 6. Integrations
-[Sign-in provider, LTI 1.3 / OneRoster / xAPI if any, email, payments — with what data is shared]
+[Sign-in provider, LTI 1.3 / OneRoster / xAPI if any, email, payments - with what data is shared]
 
 ## 7. Privacy and compliance
 - Data minimisation: [what we do not collect]

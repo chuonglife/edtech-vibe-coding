@@ -1,16 +1,18 @@
-# Prompt library — EdTech Vibe Coding
+# Prompt library - EdTech Vibe Coding
 
-Copy-ready prompts for every step of the workflow. Replace `[brackets]`. Codes `S1.1 … S4.13` match the steps in `SKILL.md`.
+Copy-ready prompts for every step of the workflow. Replace `[brackets]`. Codes `S1.1 … S4.13` match the steps in `SKILL.md`: 35 numbered prompts in 45 copy blocks.
+
+Three prompts (S2.1, S2.6, S4.11) use a template or checklist that lives in this skill's folder, not in your project. If Claude says it cannot find the file, start the message with the skill's name: `/edtech-vibe-coding:edtech-vibe-coding` after a plugin install, `/edtech-vibe-coding` after a manual copy.
 
 ## Contents
-- Stage 1 — Idea: S1.1
-- Stage 2 — Spec & UI: S2.1–S2.9
-- Stage 3 — Build: S3.1–S3.12
-- Stage 4 — Launch: S4.1–S4.13
+- Stage 1 - Idea: S1.1
+- Stage 2 - Spec & UI: S2.1-S2.9
+- Stage 3 - Build: S3.1-S3.12
+- Stage 4 - Launch: S4.1-S4.13
 
 ---
 
-## Stage 1 — Idea
+## Stage 1 - Idea
 
 ### S1.1 Capture and test the idea
 ```text
@@ -19,49 +21,49 @@ It is for [learners / teachers / parents / trainers] in [K-12 / university / boo
 Today they use [current tool or process].
 
 1. Restate the problem in one sentence.
-2. List the 3–5 existing tools that already solve something similar and what gap each leaves.
+2. List the 3-5 existing tools that already solve something similar and what gap each leaves.
 3. Tell me honestly whether building this is worth it, and what the smallest useful first version would be.
 ```
 
-## Stage 2 — Spec & UI design
+## Stage 2 - Spec & UI design
 
 ### S2.1 Create the PRD by AI interview
 Switch to Plan mode (read-only) first.
 ```text
-I need a PRD for my project. Use the template in references/prd-template.md.
+I need a PRD for my project. Use the PRD template of the edtech-vibe-coding skill (references/prd-template.md inside the skill's own folder, not in my project).
 
-MATERIALS I ALREADY HAVE (paste or attach everything — the more you get, the fewer questions you ask):
+MATERIALS I ALREADY HAVE (paste or attach everything - the more you get, the fewer questions you ask):
 [description in my own words, current workflow, gradebook or attendance spreadsheet, rubric, syllabus, paper forms, meeting notes, messages from teachers or parents, screenshots of the tool we use today]
 
-STEP 1 — Read first, ask nothing yet
+STEP 1 - Read first, ask nothing yet
 Read all materials and fill every template section they already answer.
 Report briefly: what you understood (bullets by template section) and what is missing, vague or contradictory.
 Do not ask about anything already answered. With no materials, start from the Overview.
 
-STEP 2 — Interview the gaps
+STEP 2 - Interview the gaps
 Order questions by template section, most important first. Ask one, wait for my answer, then ask the next.
 Each question comes with your suggested answer so I can reply "ok" or correct it.
 Make sure to cover: learner age (any under 13?), roles and who sees whose data, high-stakes grades or certificates, sign-in with school Google/Microsoft accounts, devices and bandwidth, accessibility needs, languages.
 
-STEP 3 — When I describe a feature
+STEP 3 - When I describe a feature
 Single action:
 • User Story: "As a [role], I want [action], so that [reason]"
-• Priority: Must / Should / Nice — ask me, don't decide
-• Done when: [testable conditions with numbers, described as what the user sees and can do — no adjectives]
+• Priority: Must / Should / Nice - ask me, don't decide
+• Done when: [testable conditions with numbers, described as what the user sees and can do - no adjectives]
 
 Multi-step flow:
 • User Story: "As a [role], I want [overall goal], so that [reason]"
-• Priority: Must / Should / Nice — ask me
+• Priority: Must / Should / Nice - ask me
 • Steps to complete: [1 → 2 → 3]
-• Done when: [pass/fail conditions the user can check — do not restate the steps]
+• Done when: [pass/fail conditions the user can check - do not restate the steps]
 • Edge cases: [on failure → what happens, e.g. connection lost mid-quiz, late submission]
 
 Confirm each part with me before recording it.
 
-STEP 4 — After each group of features
-Ask: "Any other features?" — until I say that's all.
+STEP 4 - After each group of features
+Ask: "Any other features?" - until I say that's all.
 
-STEP 5 — Produce the PRD
+STEP 5 - Produce the PRD
 Present the plan for approval (we are in Plan mode). After I approve, write docs/PRD.md following the template.
 Each feature is a level-3 heading (###) starting with 📝 Draft so the outline lists every feature.
 Do not add features I did not confirm.
@@ -87,7 +89,7 @@ Raise one point at a time. After I answer each point, update the PRD.
 
 ### S2.3 First clickable prototype
 ```text
-Read docs/PRD.md. Build a UI-only prototype in ui-demo/ with React (Vite) + Tailwind CSS — no backend. Pick a component library if it helps.
+Read docs/PRD.md. Build a UI-only prototype in ui-demo/ with React (Vite) + Tailwind CSS - no backend. Pick a component library if it helps.
 
 Make header, navigation and repeated blocks shared components; each screen is its own page and I can click between screens.
 
@@ -108,11 +110,11 @@ Fix every comment I just left on the interface in the browser. Reopen the page w
 Adjust this screen: [e.g. bigger Submit button bottom-right, add a "Late" column to the gradebook, softer background].
 ```
 ```text
-The main screen is approved. Build [2–3 screens, e.g. course page, quiz player, parent view] in the same style, reusing existing components. Repeat until every screen in the PRD exists, including one for each role.
+The main screen is approved. Build [2-3 screens, e.g. course page, quiz player, parent view] in the same style, reusing existing components. Repeat until every screen in the PRD exists, including one for each role.
 ```
 
 ### S2.5 Lock technical decisions (AI decides)
-Use the strongest model for S2.5–S2.7.
+Use the strongest model for S2.5-S2.7.
 ```text
 Here is my PRD: docs/PRD.md
 
@@ -125,7 +127,7 @@ Before writing the TDD, lock the technical decisions:
 
 ### S2.6 Write the full TDD
 ```text
-Write docs/TDD.md using references/tdd-template.md.
+Write docs/TDD.md using the TDD template of the edtech-vibe-coding skill (references/tdd-template.md inside the skill's own folder).
 
 Base it on docs/PRD.md and the decisions we locked. Choose technology by the app type in the PRD. Reuse the prototype in ui-demo/.
 Include server-side role checks for every read and write, an audit log for grade changes, and data retention/deletion rules.
@@ -137,7 +139,7 @@ The "Summary for the project owner" is plain language, at most 10 lines.
 ```text
 Here is the TDD: docs/TDD.md
 
-Review it as a senior developer, but DECIDE every technical issue yourself — do not ask me technical questions:
+Review it as a senior developer, but DECIDE every technical issue yourself - do not ask me technical questions:
 1. Edit the TDD directly where a fix is clearly needed (unclear logic, missing error cases, security or performance risks, missing access checks).
 2. Report in at most 10 plain-language lines: one change per line + why.
 3. Only ask me about cost, who may see which data, or where data is stored. Each question with a recommendation.
@@ -145,7 +147,7 @@ Review it as a senior developer, but DECIDE every technical issue yourself — d
 
 ### S2.8 Give every feature a code
 ```text
-In my PRD, prefix every feature and user story with a short code — no extra table, no separate list.
+In my PRD, prefix every feature and user story with a short code - no extra table, no separate list.
 
 Convention:
 - 3 capital letters by feature area, derived from the PRD (e.g. CRS courses, ENR enrolment, QUZ quizzes, GRD grades, ATT attendance)
@@ -167,9 +169,9 @@ Example: ### 🔄 [ENR-02] Student joins a class with a code
 
 Change all confirmed features from 📝 to ⏳, then order them by dependency (what must exist first) and by priority.
 ```
-Note: level-4 headings do not show in the document outline — keep features at level 3.
+Note: level-4 headings do not show in the document outline - keep features at level 3.
 
-## Stage 3 — Build
+## Stage 3 - Build
 
 ### S3.1 Get to know the workspace
 ```text
@@ -196,7 +198,7 @@ Read when needed, not every time:
 - Meet every "Done when" line of the story
 - The status sits at the start of the feature heading (###) in the PRD: ⏳ → 🔄 → ✅ / ⚠️
 - Follow the TDD for every technical choice: stack, DB schema, API design
-- Read ui-demo/ before writing layout — reuse existing components, do not invent new layouts
+- Read ui-demo/ before writing layout - reuse existing components, do not invent new layouts
 - Enforce role and ownership checks on the server for every read and write
 - Ask before acting if the PRD or TDD is unclear
 
@@ -223,7 +225,7 @@ Set it to 🔄, meet every "Done when" line, run and fix it yourself. Then set i
 
 ### S3.7 Accept against "Done when"
 ```text
-Check feature [code] against each "Done when" line in docs/PRD.md: open the app in the browser and try it as a real user — log in as [teacher], then as [student] — take one screenshot per line and mark Pass / Fail. Fix any failure and re-check.
+Check feature [code] against each "Done when" line in docs/PRD.md: open the app in the browser and try it as a real user - log in as [teacher], then as [student] - take one screenshot per line and mark Pass / Fail. Fix any failure and re-check.
 ```
 ```text
 On screen [X], as [role], I did [Y] and got: [description / screenshot]. Check the browser and logs, find the cause, fix it, then re-test.
@@ -253,15 +255,15 @@ Before working autonomously:
 
 ### S3.11 Hand over a group of features
 ```text
-/goal Every feature [codes, or "Must"] in docs/PRD.md is ✅ or ⚠️ with a note, each one self-checked against "Done when" and committed — or stop after 30 turns.
+/goal Every feature [codes, or "Must"] in docs/PRD.md is ✅ or ⚠️ with a note, each one self-checked against "Done when" and committed - or stop after 30 turns.
 ```
 ```text
 Build these ⏳ features from docs/PRD.md one by one: [codes, or "all Must features"].
 
 For each: 🔄 → meet "Done when" → run and fix → commit → ✅ or ⚠️.
-If the PRD is unclear, write down the question and move on to another feature — never guess.
+If the PRD is unclear, write down the question and move on to another feature - never guess.
 
-Finish with a table: code — status — note — question for me.
+Finish with a table: code - status - note - question for me.
 ```
 
 ### S3.12 Accept a batch + review
@@ -275,7 +277,7 @@ Finish with a table: code — status — note — question for me.
 Fix the serious issues found, then commit.
 ```
 
-## Stage 4 — Launch
+## Stage 4 - Launch
 
 ### S4.1 Understand the architecture
 ```text
@@ -289,7 +291,7 @@ My app: [database or not, expected users, budget, data-residency rules from the 
 
 ### S4.3 Prepare the VPS
 ```text
-I just created an Ubuntu 24.04 VPS at [provider], [CPU/RAM], IP [IP]. Give me the checklist of what to do right away to prepare it for deploying the app.
+I just created an Ubuntu [24.04 or 26.04] LTS VPS at [provider], [CPU/RAM], IP [IP]. Give me the checklist of what to do right away to prepare it for deploying the app.
 ```
 
 ### S4.4 Point the domain
@@ -317,7 +319,7 @@ Review the whole project before going live, focusing on sign-in and roles, grade
 
 ### S4.8 Deploy in one prompt, then verify
 ```text
-Deploy the app to [domain] on VPS [IP] as root with the SSH key. CloudPanel is installed — create a reverse-proxy site to the app (pick a free internal port, avoid 3000), install Node.js, PM2 and PostgreSQL, create .env, run the database migrations, build and enable SSL.
+Deploy the app to [domain] on VPS [IP]. Connect as root with the SSH key, but run the app as the site user CloudPanel creates, never as root. CloudPanel is installed - create a reverse-proxy site to the app (pick a free internal port, avoid 3000), install Node.js, PM2 and PostgreSQL, create .env, run the database migrations, build and enable SSL.
 ```
 ```text
 Verify the deployment on [IP] / [domain]: PM2 status, valid HTTPS, database connection, all migrations applied, main page loads without errors. Then try the main flow as a teacher and as a student. Report item by item.
@@ -350,7 +352,7 @@ Secure the CloudPanel admin on VPS [IP]: set a custom domain panel.[domain] inst
 
 ### S4.11 Headers + education checks
 ```text
-Add security headers (HSTS, X-Content-Type-Options, …) and disable X-Powered-By. Then run /security-review one last time, and go through references/edu-checklist.md (privacy notice, consent, data export/deletion, accessibility spot-check), reporting each item as Done / Missing.
+Add security headers (HSTS, X-Content-Type-Options, …) and disable X-Powered-By. Then review the security of the whole codebase one last time. Read every file, not only the latest changes: everything is pushed by now, so /security-review on its own would compare against GitHub and find nothing to review. Last, go through the education checklist of the edtech-vibe-coding skill (references/edu-checklist.md inside the skill's own folder: privacy notice, consent, data export/deletion, accessibility spot-check), reporting each item as Done / Missing.
 ```
 
 ### S4.12 Automatic backups + restore test
@@ -365,7 +367,7 @@ Update the app on VPS [IP] / [domain] to the latest version on GitHub.
 Mandatory order:
 1. Back up the database first
 2. Pull the code, install packages, build
-3. Run database migrations — never drop or recreate the database
+3. Run database migrations - never drop or recreate the database
 4. Restart the app, check the main page and the new feature
 
 Report each step. If anything fails, stop and ask me; do not improvise on real data.

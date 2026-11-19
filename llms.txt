@@ -6,13 +6,14 @@ Author: Chuong Life (https://github.com/chuonglife). Adapted from the Vibe Code 
 
 ## Install
 - Claude Code: `/plugin marketplace add chuonglife/edtech-vibe-coding` then `/plugin install edtech-vibe-coding@edtech-vibe-coding`
-- Manual: copy `skills/edtech-vibe-coding` to `~/.claude/skills/`
-- Claude.ai: upload the release zip in Settings → Capabilities → Skills
+- Manual: clone the repository, create `~/.claude/skills/` if it is missing, then copy the folder `skills/edtech-vibe-coding` to `~/.claude/skills/edtech-vibe-coding` (so that `~/.claude/skills/edtech-vibe-coding/SKILL.md` exists)
+- Claude.ai (Idea and PRD stages only): turn on Code execution and file creation in Settings → Capabilities, then upload the release zip in Customize → Skills → "+" → Create skill → Upload a skill
+- Needs: Claude Code (https://code.claude.com/docs/en/setup), Node.js LTS, git, a GitHub account; for launch a VPS and a domain
 
 ## Files
 - [README](https://github.com/chuonglife/edtech-vibe-coding/blob/main/README.md): overview, install, FAQ
 - [SKILL.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/SKILL.md): the workflow Claude follows
-- [prompts.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/prompts.md): copy-ready prompts S1.1–S4.13
+- [prompts.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/prompts.md): 35 numbered prompts, S1.1 to S4.13
 - [prd-template.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/prd-template.md): PRD template for education apps
 - [tdd-template.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/tdd-template.md): TDD template
 - [edu-checklist.md](https://github.com/chuonglife/edtech-vibe-coding/blob/main/skills/edtech-vibe-coding/references/edu-checklist.md): privacy, accessibility, integrity, interoperability checklist

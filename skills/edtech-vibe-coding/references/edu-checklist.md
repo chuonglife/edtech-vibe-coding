@@ -1,6 +1,6 @@
-# Education checklist — privacy, accessibility, integrity, interoperability
+# Education checklist - privacy, accessibility, integrity, interoperability
 
-Use in Stage 2.1 (ask), 2.3 (design), 3.2 (test each round) and 4.2 (audit before and after launch). This is practical guidance, not legal advice; when an app serves schools in a regulated market, the school's data-protection officer has the final word.
+Use in Stage 2.1 (ask), 2.2 (prototype, section 3), 2.3 (design), 3.2 (test each round) and 4.2 (audit before and after launch). This is practical guidance, not legal advice; when an app serves schools in a regulated market, the school's data-protection officer has the final word.
 
 ## Contents
 1. Student data privacy
@@ -11,9 +11,10 @@ Use in Stage 2.1 (ask), 2.3 (design), 3.2 (test each round) and 4.2 (audit befor
 6. Classroom reality
 
 ## 1. Student data privacy
-- [ ] **Know which rules apply.** US schools: FERPA (education records), COPPA (children under 13 online), state laws such as California's SOPIPA. EU/UK: GDPR / UK GDPR (children's consent age 13–16 depending on country). Elsewhere: the local data-protection law.
+- [ ] **Know which rules apply.** US schools: FERPA (education records), COPPA (children under 13 online), state laws such as California's SOPIPA. EU/UK: GDPR / UK GDPR (children's consent age 13-16 depending on country). Elsewhere: the local data-protection law.
+- [ ] **COPPA after the 2025 amendments.** The FTC amended the COPPA Rule on 22 April 2025. Two points from the FTC's own summary matter for a school app. Get separate verifiable parental consent before disclosing a child's personal information to third parties, for advertising or anything else. Keep a child's personal information only as long as the purpose it was collected for needs it, never indefinitely. The amendments contain more than this, so check the current FTC rule before launch: https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
 - [ ] **Minimise.** Collect only what a feature needs. No birth dates if age bands are enough; no home addresses for a quiz app.
-- [ ] **Consent.** If users can be under 13 (or under the GDPR age), plan who gives consent — usually the school acting for parents, or verified parental consent.
+- [ ] **Consent.** If users can be under 13 (or under the GDPR age), plan who gives consent: the school acting for parents, or verifiable parental consent. Under the FTC's COPPA FAQ (section N) a school can consent for parents only in the educational context, when the data is used for the school's benefit and for no other commercial purpose. Keep the school agreement on file. FAQ: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
 - [ ] **No advertising or profiling** on student data; never sell or share it with third parties beyond the services needed to run the app.
 - [ ] **Privacy notice** in plain language, reachable from every page.
 - [ ] **Export and deletion on request**, and automatic deletion after the retention period.
@@ -21,7 +22,7 @@ Use in Stage 2.1 (ask), 2.3 (design), 3.2 (test each round) and 4.2 (audit befor
 - [ ] **Third-party processors listed** (hosting, email, analytics, AI APIs) and what each receives. Do not send identifiable student data to an AI API unless the school has agreed to it.
 
 ## 2. Safeguarding
-- [ ] No unmoderated direct messages between adults and minors; teacher–student messages visible to the school.
+- [ ] No unmoderated direct messages between adults and minors; teacher-student messages visible to the school.
 - [ ] Reporting button for inappropriate content where users can post.
 - [ ] Profile photos and display names reviewed or limited for young learners.
 

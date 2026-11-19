@@ -1,4 +1,4 @@
-# PRD — [App name]
+# PRD - [App name]
 
 > Product Requirements Document. Status of each feature sits at the start of its `###` heading: 📝 Draft | ⏳ To do | 🔄 In progress | ⚠️ Partly done | ✅ Done.
 
@@ -10,7 +10,7 @@
 
 ## 2. Setting and learners
 - **Education setting:** K-12 / higher education / bootcamp / corporate L&D / private tutoring / other
-- **Learner age range:** [e.g. 11–14]. Any users under 13? Under 16 in the EU? → yes / no
+- **Learner age range:** [e.g. 11-14]. Any users under 13 (US, COPPA)? Under the digital-consent age in the EU or UK (13 to 16 by country)? → yes / no
 - **Class or cohort size:** [typical and maximum]
 - **Devices and connectivity:** [school Chromebooks, personal phones, shared lab PCs, low bandwidth, offline needed?]
 - **Languages:** [UI languages, right-to-left needed?]
@@ -33,14 +33,14 @@
 ## 5. Features
 Group features by area. Each feature is a level-3 heading.
 
-### 📝 [Feature name — single action]
+### 📝 [Feature name - single action]
 - **User story:** As a [role], I want [action], so that [reason].
 - **Priority:** Must / Should / Nice
 - **Done when:**
   - [testable condition with a number, described as what the user sees and can do]
   - [...]
 
-### 📝 [Feature name — multi-step flow]
+### 📝 [Feature name - multi-step flow]
 - **User story:** As a [role], I want [overall goal], so that [reason].
 - **Priority:** Must / Should / Nice
 - **Steps to complete:** 1. … → 2. … → 3. …
@@ -60,7 +60,7 @@ Group features by area. Each feature is a level-3 heading.
 ## 7. Integrations
 - **Sign-in:** email + password / Google Workspace for Education / Microsoft 365 / school SSO
 - **LMS or SIS:** none / LTI 1.3 tool in Canvas, Moodle, Blackboard / OneRoster roster sync
-- **Content standards:** SCORM / xAPI / Common Cartridge — needed?
+- **Content standards:** SCORM / xAPI / Common Cartridge - needed?
 - **Other:** [payments, email, video, calendar]
 
 ## 8. Non-functional requirements
@@ -73,4 +73,4 @@ Group features by area. Each feature is a level-3 heading.
 - [things explicitly not built now]
 
 ## 10. Open questions
-- [question] — owner — due date
+- [question] - owner - due date

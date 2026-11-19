@@ -3,8 +3,8 @@ message: "If you use or reference this skill, please cite it as below."
 title: "EdTech Vibe Coding: a Claude Code skill for building education and training apps"
 authors:
   - name: "Chuong Life"
-version: 1.1.0
-date-released: 2026-11-13
+version: 1.1.1
+date-released: 2026-11-19
 license: MIT
 repository-code: "https://github.com/chuonglife/edtech-vibe-coding"
 keywords:

@@ -1,4 +1,4 @@
-# PRD — QuickCheck (example)
+# PRD - QuickCheck (example)
 
 > A short example of the expected level of detail. Not a complete PRD.
 
@@ -8,7 +8,7 @@
 - **Success in 3 months:** 5 teachers run at least 3 quizzes a week; time from last answer to class summary under 1 minute.
 
 ## 2. Setting and learners
-- K-12, ages 11–14 → **users under 13: yes** (school-managed accounts, no self sign-up).
+- K-12, ages 11-14 → **users under 13: yes** (school-managed accounts, no self sign-up).
 - Classes up to 35; school Chromebooks and some phones; Wi-Fi sometimes slow.
 
 ## 3. Roles

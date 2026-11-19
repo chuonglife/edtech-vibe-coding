@@ -1,8 +1,8 @@
-# EdTech Vibe Coding — Claude Code Skill for Building Education Apps
+# EdTech Vibe Coding - Claude Code Skill for Building Education Apps
 
 > Formerly published as `vibecode-pro-max-edu`; old links redirect here.
 
-**EdTech Vibe Coding** is a free, open-source [Claude Code](https://claude.com/claude-code) skill (an Agent Skill) that guides teachers, instructional designers, training managers and edtech founders through building a **new education or training app from scratch with AI** — from idea to a secure, live web app — using a 4-stage, spec-first vibe coding workflow: **Idea → Spec & UI Design → Build → Launch**.
+**EdTech Vibe Coding** is a free, open-source [Claude Code](https://claude.com/claude-code) skill (an Agent Skill) that guides teachers, instructional designers, training managers and edtech founders through building a **new education or training app from scratch with AI** - from idea to a secure, live web app - using a 4-stage, spec-first vibe coding workflow: **Idea → Spec & UI Design → Build → Launch**.
 
 It works for any learning product: LMS, online course platform, quiz and assessment app, gradebook, class roster, attendance tracker, tutoring marketplace, corporate L&D portal, student or parent portal, school admin dashboard.
 
@@ -17,12 +17,12 @@ It works for any learning product: LMS, online course platform, quiz and assessm
 
 | | |
 |---|---|
-| **What it is** | An Agent Skill (`SKILL.md` + references) for Claude Code and Claude.ai |
-| **Who it is for** | Educators, instructional designers, L&D teams, school IT, edtech founders — no coding background required |
+| **What it is** | An Agent Skill (`SKILL.md` + references) for Claude Code. A Claude.ai upload covers the Idea and PRD stages only, because the later stages need local files, a dev server and SSH |
+| **Who it is for** | Educators, instructional designers, L&D teams, school IT, edtech founders - no coding background required |
 | **What you get** | A real PRD and TDD in your repo, a clickable React prototype, a tested app, a hardened VPS deployment with backups |
-| **Workflow** | 4 stages, 11 steps, 40+ copy-ready prompts |
+| **Workflow** | 4 stages, 11 steps, 35 numbered prompts in 45 copy-ready blocks |
 | **Education-specific** | FERPA, COPPA and GDPR privacy checks; WCAG 2.2 AA accessibility; role-based access (admin, teacher, student, parent); assessment integrity; LTI 1.3, OneRoster, SCORM, xAPI guidance |
-| **License** | MIT — free for personal, school and commercial use |
+| **License** | MIT - free for personal, school and commercial use |
 
 ---
 
@@ -57,9 +57,18 @@ Each feature in the PRD is a heading with a status and a code, so the document o
 
 ---
 
+## What you need
+
+- **Claude Code**, desktop app or CLI, with a Claude account that includes Claude Code. Install and account options: https://code.claude.com/docs/en/setup
+- **Node.js LTS and git.** The prototype in Stage 2 is a React app and will not start without Node.js. If either is missing, Claude offers to install it. Say yes.
+- **A free GitHub account** with an empty repository, from Stage 3 on. The per-feature `/security-review` needs the project to have a GitHub remote.
+- **For launch (Stage 4): a VPS and a domain name.** A small server costs about US$5-12 a month. Nothing in Stages 1 to 3 needs them.
+
+You do not need to know how to use any of these. You need to have them.
+
 ## Installation
 
-### Option 1 — Claude Code plugin marketplace (recommended)
+### Option 1 - Claude Code plugin marketplace (recommended)
 In Claude Code, run:
 
 ```text
@@ -67,15 +76,31 @@ In Claude Code, run:
 /plugin install edtech-vibe-coding@edtech-vibe-coding
 ```
 
-### Option 2 — Copy the skill folder
+### Option 2 - Copy the skill folder
+macOS, Linux or Git Bash:
+
 ```bash
 git clone https://github.com/chuonglife/edtech-vibe-coding.git
-cp -r edtech-vibe-coding/skills/edtech-vibe-coding ~/.claude/skills/
+mkdir -p ~/.claude/skills
+cp -r edtech-vibe-coding/skills/edtech-vibe-coding ~/.claude/skills/edtech-vibe-coding
 ```
-On Windows, copy the folder to `%USERPROFILE%\.claude\skills\`.
 
-### Option 3 — Claude.ai
-Download `edtech-vibe-coding.zip` from the [latest release](https://github.com/chuonglife/edtech-vibe-coding/releases/latest) and upload it in **Settings → Capabilities → Skills**.
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/chuonglife/edtech-vibe-coding.git
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse edtech-vibe-coding\skills\edtech-vibe-coding "$HOME\.claude\skills\edtech-vibe-coding"
+```
+
+Check the result: the file `SKILL.md` must sit at `.claude/skills/edtech-vibe-coding/SKILL.md` in your home folder. Restart Claude Code and type `/skills`; `edtech-vibe-coding` should be in the list. These commands are for a first install. To update, delete that `edtech-vibe-coding` folder and run the copy line again.
+
+### Option 3 - Claude.ai (Idea and PRD stages only)
+1. In **Settings → Capabilities**, turn on **Code execution and file creation**. Skills do not run without it.
+2. Download `edtech-vibe-coding.zip` from the [latest release](https://github.com/chuonglife/edtech-vibe-coding/releases/latest).
+3. Open **Customize → Skills**, click **+**, then **Create skill**, then **Upload a skill**, and pick the zip.
+
+On a Team or Enterprise plan an owner may have to allow code execution and skills first.
 
 ---
 
@@ -96,7 +121,7 @@ Claude then walks you through each stage, asks only what a non-specialist can an
 skills/edtech-vibe-coding/
 ├── SKILL.md                         # the workflow and rules Claude follows
 └── references/
-    ├── prompts.md                   # 40+ copy-ready prompts, S1.1 … S4.13
+    ├── prompts.md                   # 35 numbered prompts, S1.1 … S4.13
     ├── prd-template.md              # PRD with learners, roles, outcomes, privacy
     ├── tdd-template.md              # TDD with a 10-line owner summary
     ├── edu-checklist.md             # FERPA/COPPA/GDPR, WCAG 2.2 AA, integrity, LTI/OneRoster/SCORM/xAPI
@@ -111,7 +136,7 @@ skills/edtech-vibe-coding/
 Vibe coding means building software by describing what you want in plain language and letting an AI coding agent such as Claude Code write, run and fix the code. This skill adds the structure that keeps vibe-coded apps maintainable and safe.
 
 **Do I need to know how to code?**
-No. The skill is written for educators and trainers. Technical choices are made by the AI; you are asked only about things you know better than anyone — your learners, your classroom and your budget.
+No. The skill is written for educators and trainers. Technical choices are made by the AI; you are asked only about things you know better than anyone - your learners, your classroom and your budget.
 
 **Which apps can I build with it?**
 Any new education or training app: LMS, course platform, quiz and assessment tool, gradebook, attendance tracker, flashcards, tutoring booking, certification portal, parent communication app, school dashboard.
@@ -129,9 +154,19 @@ The skill covers sign-in with Google Workspace for Education and Microsoft 365, 
 It is designed for new projects starting from zero. Many prompts (feature loop, security review, safe updates) still work on existing projects.
 
 **How much does hosting cost?**
-The default deployment is a small VPS (1 vCPU, 2 GB RAM, Ubuntu 24.04) with free CloudPanel and free Let's Encrypt SSL — typically around US$5–12 per month.
+The default deployment is a small VPS (1 vCPU, 2 GB RAM, Ubuntu 24.04 or 26.04 LTS) with free CloudPanel and free Let's Encrypt SSL - typically around US$5-12 per month.
 
 ---
+
+## Related skills
+
+This skill builds apps. If you are building the course itself, five sibling skills cover that line, from program to video:
+
+- [Curriculum Designer](https://github.com/chuonglife/curriculum-designer-skill): the whole training program, modules and lessons with objectives and hours.
+- [Lesson Content Writer](https://github.com/chuonglife/lesson-content-writer-skill): one complete lesson with measurable objectives and a word-for-word script.
+- [Lesson Slide Designer](https://github.com/chuonglife/lesson-slide-designer-skill): the slide deck and the video script for a lesson.
+- [Lesson Video Producer](https://github.com/chuonglife/lesson-video-producer-skill): the narrated video from those slides.
+- [Lesson Assessment Designer](https://github.com/chuonglife/lesson-assessment-designer-skill): the quiz, test and rubric from a lesson's objectives.
 
 ## Credits
 
@@ -139,7 +174,7 @@ The 4-stage workflow is adapted from the Vietnamese **Vibe Code Roadmap v2** by 
 
 ## Contributing
 
-Issues and pull requests are welcome — especially new example PRDs (gradebook, LMS, tutoring), translations, and country-specific privacy notes.
+Issues and pull requests are welcome - especially new example PRDs (gradebook, LMS, tutoring), translations, and country-specific privacy notes.
 
 ## License
 
